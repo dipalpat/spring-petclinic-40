@@ -1,0 +1,10 @@
+---
+applications:
+- name: spring-petclinic-40
+  path: ../target/spring-petclinic-4.0.0-SNAPSHOT.jar
+  buildpacks:
+    - ms-java-offline
+  stack: cflinuxfs4
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
+    SPRING_PROFILES_ACTIVE: h2  
