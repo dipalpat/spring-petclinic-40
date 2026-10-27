@@ -1,7 +1,7 @@
 ---
 applications:
 - name: spring-petclinic-40
-  path: ../target/spring-petclinic-4.0.0-SNAPSHOT.jar
+  path: target/spring-petclinic-4.0.0-SNAPSHOT.jar
   buildpacks:
     - ms_java_offline
   stack: cflinuxfs4
